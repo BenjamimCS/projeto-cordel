@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    min-height: 100vh;
+    font-family: var(--othrFont);
+    background-color: darkgray;
+}
+
+:root{
+    --fontPrim: 'Passion One';
+    --fontPoem: 'Sriracha';
+    --othrFont: Verdana;
+}
+
+header{
+    max-width: 100vw;
+    /*padding: 63px;*/
+    text-align: center;
+    font-family: var(--fontPrim);
+    font-weight: 700;
+    font-size: 3.5em;
+    color: white;
+    background-color: black;
+}
+
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 10vw;
+}
+
+header > p{
+    padding-bottom: 50px;  
+    font-family: var(--othrFont);  
+    font-weight: normal;
+    font-size: 0.28em;
+}
+
+ a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+abbr{
+    text-decoration: none; 
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+    font-family: var(--fontPoem);
+    font-size: 3.5vw;
+}
+
+section p{
+    padding-bottom: 2em;
+}
+
+section.noBg{
+    color: black;
+    background-color: white;
+}
+
+section#img-01{
+    background-image: url("../img/background001.jpg");
+    background-position: right center;
+}
+
+section#img-02{
+    background-image: url("../img/background002.jpg");
+}
+
+section.Bg{
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.336);
+
+    background-color: rgb(51, 51, 51);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section.Bg p{
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.767);
+    background-color: rgba(0, 0, 0, 0.24);
+}
+
+footer{
+    padding: 10px;
+    text-align: center;
+    font-family: var(--othrFont);
+    color: white;
+    background-color: black;
+}
